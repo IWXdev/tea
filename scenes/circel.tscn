@@ -1,8 +1,7 @@
-[gd_scene load_steps=83 format=3 uid="uid://4jco874r5vt7"]
+[gd_scene load_steps=81 format=3 uid="uid://4jco874r5vt7"]
 
 [ext_resource type="Script" path="res://scripts/circel.gd" id="1_k130v"]
 [ext_resource type="Texture2D" uid="uid://d1jvllpaccxdu" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/idle/tile012.png" id="2_1v4cw"]
-[ext_resource type="Texture2D" uid="uid://dc2w46ph6f5m4" path="res://yy/Pixel Art Skill Animations - Lightning/VFX6/Frames/lightning_skill6_frame6.png" id="3_46f12"]
 [ext_resource type="Texture2D" uid="uid://bjd4qayeafaob" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/idle/tile001.png" id="3_tcxjt"]
 [ext_resource type="Texture2D" uid="uid://dwkprf43xs8ns" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/idle/tile002.png" id="4_la4jf"]
 [ext_resource type="Texture2D" uid="uid://juaf3e4bolwg" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/idle/tile003.png" id="5_bepbi"]
@@ -70,7 +69,6 @@
 [ext_resource type="Texture2D" uid="uid://be1qn7hg2p22r" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/hit/tile002.png" id="64_v8e3q"]
 [ext_resource type="Texture2D" uid="uid://gian6g8m54j6" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/hit/tile003.png" id="65_v07nl"]
 [ext_resource type="Texture2D" uid="uid://cw00eed6fr7bw" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/hit/tile004.png" id="66_agwq8"]
-[ext_resource type="Texture2D" uid="uid://bvlchompbetrr" path="res://yy/Pixel Art Skill Animations - Lightning/VFX6/Frames/lightning_skill6_frame7.png" id="70_f2cra"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tdcjv"]
 size = Vector2(7.22136, 24.1187)
@@ -688,10 +686,10 @@ tracks/3/path = NodePath("Marker2D/effect:texture")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.3, 0.35, 0.7),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("70_f2cra"), ExtResource("3_46f12"), ExtResource("70_f2cra"), ExtResource("3_46f12"), ExtResource("70_f2cra")]
+"values": [null]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -700,10 +698,10 @@ tracks/4/path = NodePath("Marker2D/effect:position")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.25, 0.3, 0.35, 0.65, 0.7),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, 43.4781), Vector2(9.63211e-05, 39.5257), Vector2(-13.3332, 39.5257), Vector2(0, 43.4781), Vector2(9.63211e-05, 39.5257), Vector2(-13.3332, 39.5257), Vector2(0, 43.4781)]
+"values": [Vector2(0, 43.4781)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -712,10 +710,10 @@ tracks/5/path = NodePath("Marker2D/effect:scale")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0.1, 0.35),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
 "update": 0,
-"values": [Vector2(0.359374, 0.526433), Vector2(0.359374, 0.526433)]
+"values": []
 }
 tracks/6/type = "value"
 tracks/6/imported = false

@@ -3,9 +3,9 @@ extends Control
 @onready var grid = $GridContainer
 var sizes = 4
 
-var empty_texture = preload("res://yy/icon/squars/y_64.png")
-var queen_texture = preload("res://yy/icon/crown.png")
-var path_texture = preload("res://yy/icon/squars/b_64.png")  # ← المسار
+@export var empty_texture = preload("res://yy/icon/squars/y_64.png")
+@export var queen_texture = preload("res://yy/icon/crown.png")
+@export var path_texture = preload("res://yy/icon/squars/b_64.png")  # ← المسار
 
 func _ready():
 	grid.columns = sizes
