@@ -2,27 +2,23 @@
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vjkxr"]
 bg_color = Color(0.14902, 0.14902, 0.14902, 1)
-border_width_left = 6
-border_width_top = 6
-border_width_right = 6
-border_width_bottom = 6
+skew = Vector2(-1, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 1
+border_width_bottom = 2
 border_color = Color(0.920995, 0.920995, 0.920994, 1)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
+corner_radius_top_left = 60
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pxx87"]
 bg_color = Color(0.737389, 0, 0.0984616, 1)
-border_width_left = 6
-border_width_top = 6
-border_width_right = 6
-border_width_bottom = 6
+skew = Vector2(-1, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
 border_color = Color(0.921569, 0.921569, 0.921569, 1)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
+corner_radius_top_left = 60
 
 [node name="healthbar" type="ProgressBar"]
 anchors_preset = 8

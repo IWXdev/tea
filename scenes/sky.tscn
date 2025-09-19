@@ -186,3 +186,4 @@ libraries = {
 "": SubResource("AnimationLibrary_yrweh")
 }
 autoplay = "sky"
+speed_scale = 0.3

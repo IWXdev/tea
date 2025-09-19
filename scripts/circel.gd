@@ -8,15 +8,15 @@ extends CharacterBody2D
 @export var wall_jump_force = Vector2(200, -300)
 
 @onready var anim: AnimationPlayer = $AnimationPlayer
-@onready var healthbar = $"../ui/healthbar"
-@onready var stam = $"../ui/stamina"
+@onready var healthbar = $"../ui/Control/healthbar"
+@onready var stam = $"../ui/Control/stamina"
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var direction: float
-var dash_time = 0.0
+var dash_time = false
 var attacking = false
 var damag = 10
-var dead = false
+var damag_hit = false
 
 var on_wall = false
 var wall_dir = 0 
@@ -30,24 +30,18 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity.y += gravity * delta
-	if Input.is_action_just_pressed("damag"):
-		health -= damag
-		healthbar.value = health
 
 	stam.value = stamina
 
 	if stamina < 100:
 		if direction == 0:
-			stamina += 0.1
+			stamina += 0.15
 
-	if health == 0:
-		dead = true
-
-	if dash_time <= 0:
+	if !dash_time:
 		move()
-
+	hit()
 	jump()
-	dash(delta)
+	dash()
 	Attack()
 	check_wall()
 
@@ -71,20 +65,15 @@ func move():
 	if direction:
 		velocity.x = direction * speed
 		$Marker2D.scale.x = direction
-		$Marker2D2.scale.x = direction
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
 
 
-func dash(delta):
-	if stamina > 30:
-		if Input.is_action_just_pressed("Dash") and dash_time <= 0:
-			dash_time = 1
-			stamina -= 30
-		
-		if dash_time > 0:
-			dash_time -= delta
-			velocity.x = direction * 400
+func dash():
+	if stamina > 20:
+		if Input.is_action_just_pressed("Dash") and !dash_time:
+			dash_time = true
+			stamina -= 20
 
 
 
@@ -97,17 +86,26 @@ func jump():
 
 func Attack():
 	if stamina > 20:
-		if Input.is_action_just_pressed("attack"):
+		if Input.is_action_just_pressed("attack") and !attacking:
 			attacking = true
 			stamina -= 20
 
+func hit():
+	if Input.is_action_just_pressed("damag"):
+		damag_hit = true
+		health -= damag
+		healthbar.value = health
 
 func animation():
-	if dead:
+	if health <= 0:
 		anim.play("dead")
 		return
+	elif damag_hit:
+		anim.play("hit")
+		velocity = Vector2(-20,-10)
+		return 
 	
-	if dash_time > 0:
+	if dash_time:
 		anim.play("dash")
 		return
 	
@@ -126,7 +124,6 @@ func animation():
 			anim.play("run")
 		else:
 			anim.play("idle")
-
 
 
 func check_wall():
@@ -148,9 +145,13 @@ func check_wall():
 			wall_dir = direction
 
 
-
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "attack":
 		attacking = false
-	if anim_name == "daed":
+	if anim_name == "dead":
 		get_tree().reload_current_scene()
+	if anim_name == "hit":
+		damag_hit = false
+		anim.play("idle")
+	if anim_name == "dash":
+		dash_time = false

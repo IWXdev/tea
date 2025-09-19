@@ -1,7 +1,8 @@
-[gd_scene load_steps=73 format=3 uid="uid://4jco874r5vt7"]
+[gd_scene load_steps=83 format=3 uid="uid://4jco874r5vt7"]
 
 [ext_resource type="Script" path="res://scripts/circel.gd" id="1_k130v"]
 [ext_resource type="Texture2D" uid="uid://d1jvllpaccxdu" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/idle/tile012.png" id="2_1v4cw"]
+[ext_resource type="Texture2D" uid="uid://dc2w46ph6f5m4" path="res://yy/Pixel Art Skill Animations - Lightning/VFX6/Frames/lightning_skill6_frame6.png" id="3_46f12"]
 [ext_resource type="Texture2D" uid="uid://bjd4qayeafaob" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/idle/tile001.png" id="3_tcxjt"]
 [ext_resource type="Texture2D" uid="uid://dwkprf43xs8ns" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/idle/tile002.png" id="4_la4jf"]
 [ext_resource type="Texture2D" uid="uid://juaf3e4bolwg" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/idle/tile003.png" id="5_bepbi"]
@@ -31,6 +32,7 @@
 [ext_resource type="Texture2D" uid="uid://wgmu244qqpuu" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/attack/tile15.png" id="39_4orlm"]
 [ext_resource type="Texture2D" uid="uid://dmoehn7g2sjiq" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/attack/tile16.png" id="40_pxgi4"]
 [ext_resource type="Texture2D" uid="uid://cq65hig2jnkgt" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/attack/tile17.png" id="41_m575l"]
+[ext_resource type="Texture2D" uid="uid://dnoge1klsac3t" path="res://yy/Pixel Art Skill Animations - Lightning/VFX6/Frames/lightning_skill6_frame5.png" id="42_53fin"]
 [ext_resource type="Texture2D" uid="uid://crxne5sondsfi" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/attack/tile18.png" id="42_ik0g4"]
 [ext_resource type="Texture2D" uid="uid://8n2o2yebts1j" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/attack/tile19.png" id="43_gajhi"]
 [ext_resource type="Texture2D" uid="uid://r2e17jqwef5q" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/attack/tile20.png" id="44_di5pk"]
@@ -39,6 +41,7 @@
 [ext_resource type="Texture2D" uid="uid://8miy3d1065gx" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/attack/tile22.png" id="46_b5v42"]
 [ext_resource type="Texture2D" uid="uid://2aumxfo2evlx" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/dash/tile02.png" id="46_ndxno"]
 [ext_resource type="Texture2D" uid="uid://odbbduc1c5sk" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/dash/tile03.png" id="47_0hsly"]
+[ext_resource type="Texture2D" uid="uid://c4wn6kkcgepo6" path="res://yy/VFX Blood Concepts/VFX Blood Concepts FXOnly3.png" id="47_xpd7m"]
 [ext_resource type="Texture2D" uid="uid://bntbdnm68onat" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/attack/tile24.png" id="48_ue6cq"]
 [ext_resource type="Texture2D" uid="uid://darlrqxs1llf" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/dash/tile04.png" id="48_vvcr0"]
 [ext_resource type="Texture2D" uid="uid://d335uaomexwn4" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/dash/tile05.png" id="49_0ln8f"]
@@ -61,7 +64,13 @@
 [ext_resource type="Texture2D" uid="uid://3trarcgcnaie" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/dead/tile007.png" id="59_yirsj"]
 [ext_resource type="Texture2D" uid="uid://lmnhwekixqiq" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/dead/tile008.png" id="60_wwm35"]
 [ext_resource type="Texture2D" uid="uid://c7ptt7agah3pj" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/dead/tile009.png" id="61_bafth"]
+[ext_resource type="Texture2D" uid="uid://bnerdce8baq5r" path="res://yy/Pixel Art Skill Animations - Lightning/VFX6/Frames/lightning_skill6_frame1.png" id="61_lyo5k"]
 [ext_resource type="Texture2D" uid="uid://bg7108pp4kpl6" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/dead/tile010.png" id="62_mntvm"]
+[ext_resource type="Texture2D" uid="uid://c6a7t60au36pb" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/hit/tile001.png" id="63_uew7t"]
+[ext_resource type="Texture2D" uid="uid://be1qn7hg2p22r" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/hit/tile002.png" id="64_v8e3q"]
+[ext_resource type="Texture2D" uid="uid://gian6g8m54j6" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/hit/tile003.png" id="65_v07nl"]
+[ext_resource type="Texture2D" uid="uid://cw00eed6fr7bw" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/hit/tile004.png" id="66_agwq8"]
+[ext_resource type="Texture2D" uid="uid://bvlchompbetrr" path="res://yy/Pixel Art Skill Animations - Lightning/VFX6/Frames/lightning_skill6_frame7.png" id="70_f2cra"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tdcjv"]
 size = Vector2(7.22136, 24.1187)
@@ -116,11 +125,59 @@ tracks/3/keys = {
 "update": 1,
 "values": [SubResource("RectangleShape2D_tdcjv")]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Marker2D/effect:texture")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Marker2D/effect:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(6.66672, 67.1937)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Marker2D/effect:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.562499, 0.682312)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Marker2D/effect:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_5xtl0"]
 resource_name = "attack"
 length = 1.3
-step = 0.05
+step = 0.01
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -156,6 +213,18 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(118.462, -12.7273)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Marker2D/effect:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
 }
 
 [sub_resource type="Animation" id="Animation_q7bif"]
@@ -237,6 +306,18 @@ tracks/2/keys = {
 "update": 1,
 "values": [SubResource("RectangleShape2D_tdcjv")]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Marker2D/effect:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
 
 [sub_resource type="Animation" id="Animation_h7im6"]
 resource_name = "fall"
@@ -277,6 +358,143 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(3.07695, 5.45455)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Marker2D/effect:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("42_53fin")]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Marker2D/effect:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2.57492e-05, 43.4783), Vector2(3.33336, 43.4783), Vector2(2.57492e-05, 43.4783), Vector2(6.66669, 43.4783)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Marker2D/effect:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.402345, 0.448494)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Marker2D/effect:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.223103, 0.223103, 0.223103, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_h32fu"]
+resource_name = "hit"
+length = 0.25
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Marker2D/hanter:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.2, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("63_uew7t"), ExtResource("64_v8e3q"), ExtResource("65_v07nl"), ExtResource("66_agwq8")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Marker2D/hanter:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(3.07695, 1.81819)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4.87521, 2.8848)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Marker2D/effect:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [null, ExtResource("47_xpd7m"), null]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Marker2D/effect:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.05, 0.1, 0.15, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.315363, 0.346425), Vector2(0.381049, 0.417701), Vector2(0.465439, 0.534836), Vector2(0.576362, 0.654525)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Marker2D/effect:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.05, 0.1, 0.15, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(3.33337, -11.8577), Vector2(3.33325, -11.8577), Vector2(3.33328, -3.19779e-05), Vector2(3.33333, 3.9526)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Marker2D/effect:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_tdo02"]
@@ -320,11 +538,23 @@ tracks/2/keys = {
 "update": 0,
 "values": [Vector2(3.07695, 5.45455)]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Marker2D/effect:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
 
 [sub_resource type="Animation" id="Animation_pfnag"]
 resource_name = "jump"
 length = 0.3
-step = 0.05
+step = 0.01
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -361,10 +591,59 @@ tracks/2/keys = {
 "update": 0,
 "values": [Vector2(3.07695, 5.45455)]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Marker2D/effect:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("61_lyo5k")]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Marker2D/effect:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.09, 0.1, 0.29, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(23.3334, 67.1937), Vector2(6.66672, 67.1937), Vector2(6.66672, 67.1937), Vector2(23.3334, 67.1937)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Marker2D/effect:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.562499, 0.682312)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Marker2D/effect:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.2484, 0.2484, 0.2484, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_bq1nv"]
 resource_name = "run"
 length = 0.7
+loop_mode = 1
 step = 0.05
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -402,6 +681,54 @@ tracks/2/keys = {
 "update": 0,
 "values": [Vector2(3.07695, 5.45455)]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Marker2D/effect:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3, 0.35, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("70_f2cra"), ExtResource("3_46f12"), ExtResource("70_f2cra"), ExtResource("3_46f12"), ExtResource("70_f2cra")]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Marker2D/effect:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.25, 0.3, 0.35, 0.65, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 43.4781), Vector2(9.63211e-05, 39.5257), Vector2(-13.3332, 39.5257), Vector2(0, 43.4781), Vector2(9.63211e-05, 39.5257), Vector2(-13.3332, 39.5257), Vector2(0, 43.4781)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Marker2D/effect:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.1, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.359374, 0.526433), Vector2(0.359374, 0.526433)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Marker2D/effect:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.223103, 0.223103, 0.223103, 1)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_45yj7"]
 _data = {
@@ -410,6 +737,7 @@ _data = {
 "dash": SubResource("Animation_q7bif"),
 "dead": SubResource("Animation_4axof"),
 "fall": SubResource("Animation_h7im6"),
+"hit": SubResource("Animation_h32fu"),
 "idle": SubResource("Animation_tdo02"),
 "jump": SubResource("Animation_pfnag"),
 "run": SubResource("Animation_bq1nv")
@@ -422,9 +750,9 @@ scale = Vector2(0.3, 0.253)
 script = ExtResource("1_k130v")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
+zoom = Vector2(2.5, 2.5)
 limit_left = 0
-limit_top = 26
+limit_top = 95
 limit_right = 3490
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -433,6 +761,10 @@ scale = Vector2(4.9, 4.9)
 shape = SubResource("RectangleShape2D_tdcjv")
 
 [node name="Marker2D" type="Marker2D" parent="."]
+
+[node name="effect" type="Sprite2D" parent="Marker2D"]
+position = Vector2(6.66672, 67.1937)
+scale = Vector2(0.562499, 0.682312)
 
 [node name="hanter" type="Sprite2D" parent="Marker2D"]
 position = Vector2(3.07695, 1.81819)
@@ -451,7 +783,5 @@ libraries = {
 "": SubResource("AnimationLibrary_45yj7")
 }
 autoplay = "idle"
-
-[node name="Marker2D2" type="Marker2D" parent="."]
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
