@@ -56,5 +56,5 @@ The hero tries to reach a mysterious puzzle by navigating rooftops and solving d
 - **Platform**: PC (initially)
 
 ## Description of Image
-(!<img width="1910" height="981" alt="Screenshot 2025-09-19 141613" src="https://github.com/user-attachments/assets/aa05a2bd-de09-4e5e-9ca4-4bd891803df5" />)(!<img width="1844" height="919" alt="Screenshot 2025-09-19 141743" src="https://github.com/user-attachments/assets/40e9cb88-124a-43a5-a1c2-f61e7a8ac100" />
-)
+<img width="1910" height="981" alt="Screenshot 2025-09-19 141613" src="https://github.com/user-attachments/assets/aa05a2bd-de09-4e5e-9ca4-4bd891803df5" />
+<img width="1844" height="919" alt="Screenshot 2025-09-19 141743" src="https://github.com/user-attachments/assets/40e9cb88-124a-43a5-a1c2-f61e7a8ac100" />
