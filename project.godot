@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="tea"
-run/main_scene="res://scenes/test.tscn"
-config/features=PackedStringArray("4.3", "GL Compatibility")
+run/main_scene="res://scenes/level.tscn"
+config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://yy/icon.svg"
 
 [input]

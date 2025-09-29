@@ -1,8 +1,7 @@
-[gd_scene load_steps=17 format=3 uid="uid://5x6d8a2vonhn"]
+[gd_scene load_steps=11 format=3 uid="uid://5x6d8a2vonhn"]
 
 [ext_resource type="FontFile" uid="uid://ds2q7k08drb8x" path="res://yy/font/dash/Dash-Horizon-Demo.otf" id="1_y4pnq"]
 [ext_resource type="Texture2D" uid="uid://p77ebmf24e4l" path="res://yy/exit.png" id="2_ip5gs"]
-[ext_resource type="Script" path="res://scripts/game_ui.gd" id="3_8scw3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g85tb"]
 bg_color = Color(0.31585, 0.385962, 0.6463, 1)
@@ -37,12 +36,12 @@ shadow_size = 2
 shadow_color = Color(0, 0, 0, 1)
 shadow_offset = Vector2(7, 6)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5bb11"]
-bg_color = Color(0.93519, 0.30574, 0.292436, 1)
-border_width_left = 40
-border_width_top = 40
-border_width_right = 40
-border_width_bottom = 40
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7vs8a"]
+bg_color = Color(0.832446, 0.206532, 0.20998, 1)
+border_width_left = 60
+border_width_top = 60
+border_width_right = 60
+border_width_bottom = 60
 border_color = Color(0, 0, 0, 1)
 corner_radius_top_left = 100
 corner_radius_top_right = 100
@@ -61,12 +60,12 @@ corner_radius_top_right = 100
 corner_radius_bottom_right = 100
 corner_radius_bottom_left = 100
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7vs8a"]
-bg_color = Color(0.832446, 0.206532, 0.20998, 1)
-border_width_left = 60
-border_width_top = 60
-border_width_right = 60
-border_width_bottom = 60
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5bb11"]
+bg_color = Color(0.93519, 0.30574, 0.292436, 1)
+border_width_left = 40
+border_width_top = 40
+border_width_right = 40
+border_width_bottom = 40
 border_color = Color(0, 0, 0, 1)
 corner_radius_top_left = 100
 corner_radius_top_right = 100
@@ -83,32 +82,6 @@ border_color = Color(0.0453617, 0.0660445, 0.14887, 1)
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0rp1w"]
-bg_color = Color(0.111232, 0.155509, 0.206099, 1)
-border_width_left = 1
-border_width_right = 1
-border_width_bottom = 2
-border_color = Color(0.0431373, 0.0666667, 0.14902, 1)
-corner_radius_top_right = 10
-corner_radius_bottom_right = 4
-corner_radius_bottom_left = 4
-
-[sub_resource type="LabelSettings" id="LabelSettings_4xxy6"]
-font = ExtResource("1_y4pnq")
-font_size = 36
-font_color = Color(0.219608, 0.533333, 0.435294, 1)
-outline_size = 8
-outline_color = Color(0, 0, 0, 1)
-shadow_color = Color(1, 1, 1, 0.760784)
-shadow_offset = Vector2(3, 3)
-
-[sub_resource type="LabelSettings" id="LabelSettings_0l3l1"]
-line_spacing = 12.0
-font = ExtResource("1_y4pnq")
-font_size = 30
-outline_size = 10
-outline_color = Color(0, 0, 0, 1)
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uaj8n"]
 bg_color = Color(0.152941, 0.207843, 0.270588, 1)
 border_width_left = 5
@@ -118,20 +91,6 @@ border_width_bottom = 5
 border_color = Color(0.0431373, 0.0666667, 0.14902, 1)
 corner_radius_top_left = 20
 corner_radius_bottom_left = 20
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1enph"]
-bg_color = Color(0.109804, 0.156863, 0.207843, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.0431373, 0.0666667, 0.14902, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_3otuj"]
-font = ExtResource("1_y4pnq")
-font_size = 34
-outline_size = 9
-outline_color = Color(0, 0, 0, 1)
 
 [node name="mystif" type="CanvasLayer"]
 
@@ -178,6 +137,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="exit" type="Button" parent="Control/Panel"]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.89
@@ -190,15 +150,15 @@ offset_right = 1431.19
 offset_bottom = 662.514
 grow_horizontal = 0
 scale = Vector2(0.0610305, 0.0521905)
-theme_override_colors/font_pressed_color = Color(0.687215, 0.687215, 0.687215, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.687215, 0.687215, 0.687215, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 100
+theme_override_constants/outline_size = 80
 theme_override_fonts/font = ExtResource("1_y4pnq")
 theme_override_font_sizes/font_size = 400
-theme_override_styles/hover = SubResource("StyleBoxFlat_5bb11")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_jdvnw")
 theme_override_styles/normal = SubResource("StyleBoxFlat_7vs8a")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jdvnw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5bb11")
 text = "EXIT"
 icon = ExtResource("2_ip5gs")
 
@@ -217,45 +177,6 @@ grow_horizontal = 0
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_deh1g")
 
-[node name="titer" type="Label" parent="Control/Panel/desc"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.023
-anchor_right = 1.469
-anchor_bottom = 0.135
-offset_left = -0.921875
-offset_top = 5.00001
-offset_right = -14.3659
-offset_bottom = -12.07
-grow_vertical = 2
-scale = Vector2(0.690751, 1.25515)
-theme_override_styles/normal = SubResource("StyleBoxFlat_0rp1w")
-text = "D E S C R I P T I O N"
-label_settings = SubResource("LabelSettings_4xxy6")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="desc" type="Label" parent="Control/Panel/desc"]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.174
-anchor_right = 1.327
-anchor_bottom = 0.83
-offset_left = 10.0001
-offset_top = 0.132011
-offset_right = 9.02216
-offset_bottom = -64.06
-grow_vertical = 2
-scale = Vector2(0.690751, 1.25515)
-text = "Can you place 8 queens 
-on a chessboard such that
-no queen is on the same
-row, column, or diagonal
-as another queen?"
-label_settings = SubResource("LabelSettings_0l3l1")
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="Panel" type="Panel" parent="Control/Panel"]
 layout_mode = 1
 anchors_preset = -1
@@ -270,44 +191,3 @@ offset_bottom = -0.244995
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_uaj8n")
-
-[node name="GameUI" type="Control" parent="Control/Panel/Panel"]
-layout_mode = 1
-anchor_left = 0.079
-anchor_top = 0.066
-anchor_right = 0.921
-anchor_bottom = 0.934
-offset_left = -0.252079
-offset_top = 0.121973
-offset_right = 0.252014
-offset_bottom = -0.121979
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("3_8scw3")
-
-[node name="Label" type="Label" parent="Control/Panel/Panel/GameUI"]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 0.093
-offset_top = -28.0
-offset_bottom = -15.967
-grow_horizontal = 2
-theme_override_styles/normal = SubResource("StyleBoxFlat_1enph")
-text = "L   E   V   E  L     1"
-label_settings = SubResource("LabelSettings_3otuj")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="GridContainer" type="GridContainer" parent="Control/Panel/Panel/GameUI"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/h_separation = 4
-theme_override_constants/v_separation = 4
-columns = 4

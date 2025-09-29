@@ -6,11 +6,13 @@ extends CharacterBody2D
 @export var jump_velocity = -300
 @export var wall_slide_speed = 50
 @export var wall_jump_force = Vector2(200, -300)
+@export var push_strength: float = 500.0
 
 @onready var anim: AnimationPlayer = $AnimationPlayer
 @onready var healthbar = $"../ui/Control/healthbar"
 @onready var stam = $"../ui/Control/stamina"
 
+var bodies_to_push: Array = []
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var direction: float
 var dash_time = false
@@ -26,7 +28,6 @@ func _ready() -> void:
 	stam.value = stamina
 
 
-
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity.y += gravity * delta
@@ -36,6 +37,12 @@ func _physics_process(delta: float) -> void:
 	if stamina < 100:
 		if direction == 0:
 			stamina += 0.15
+
+	if direction != 0:
+		for body in bodies_to_push:
+			if body.is_in_group("box"):
+				body.apply_central_impulse(direction * push_strength * delta)
+
 
 	if !dash_time:
 		move()
@@ -155,3 +162,13 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 		anim.play("idle")
 	if anim_name == "dash":
 		dash_time = false
+
+
+func _on_push_box_body_entered(body: Node2D) -> void:
+	if body.is_in_group("box"):
+		bodies_to_push.append(body)
+
+
+func _on_push_box_body_exited(body: Node2D) -> void:
+	if body in bodies_to_push:
+		bodies_to_push.erase(body)

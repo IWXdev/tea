@@ -1,6 +1,6 @@
-[gd_scene load_steps=81 format=3 uid="uid://4jco874r5vt7"]
+[gd_scene load_steps=82 format=3 uid="uid://4jco874r5vt7"]
 
-[ext_resource type="Script" path="res://scripts/circel.gd" id="1_k130v"]
+[ext_resource type="Script" uid="uid://baebmk0668dd2" path="res://scripts/player.gd" id="1_k130v"]
 [ext_resource type="Texture2D" uid="uid://d1jvllpaccxdu" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/idle/tile012.png" id="2_1v4cw"]
 [ext_resource type="Texture2D" uid="uid://bjd4qayeafaob" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/idle/tile001.png" id="3_tcxjt"]
 [ext_resource type="Texture2D" uid="uid://dwkprf43xs8ns" path="res://yy/SHADOW Series - The Blind Huntress/SHADOW Series - The Blind Huntress/idle/tile002.png" id="4_la4jf"]
@@ -730,16 +730,19 @@ tracks/6/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_45yj7"]
 _data = {
-"RESET": SubResource("Animation_jcd3o"),
-"attack": SubResource("Animation_5xtl0"),
-"dash": SubResource("Animation_q7bif"),
-"dead": SubResource("Animation_4axof"),
-"fall": SubResource("Animation_h7im6"),
-"hit": SubResource("Animation_h32fu"),
-"idle": SubResource("Animation_tdo02"),
-"jump": SubResource("Animation_pfnag"),
-"run": SubResource("Animation_bq1nv")
+&"RESET": SubResource("Animation_jcd3o"),
+&"attack": SubResource("Animation_5xtl0"),
+&"dash": SubResource("Animation_q7bif"),
+&"dead": SubResource("Animation_4axof"),
+&"fall": SubResource("Animation_h7im6"),
+&"hit": SubResource("Animation_h32fu"),
+&"idle": SubResource("Animation_tdo02"),
+&"jump": SubResource("Animation_pfnag"),
+&"run": SubResource("Animation_bq1nv")
 }
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t5mwf"]
+size = Vector2(36.666626, 122.52998)
 
 [node name="hanter" type="CharacterBody2D" groups=["player"]]
 texture_filter = 1
@@ -778,8 +781,18 @@ shadow_color = Color(0.0509804, 0.0509804, 0.0509804, 1)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_45yj7")
+&"": SubResource("AnimationLibrary_45yj7")
 }
 autoplay = "idle"
 
+[node name="push_box" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="push_box"]
+position = Vector2(5, 1.9759521)
+scale = Vector2(0.99999976, 1)
+shape = SubResource("RectangleShape2D_t5mwf")
+debug_color = Color(0.6835143, 0, 0.08757483, 0.41960785)
+
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="body_entered" from="push_box" to="." method="_on_push_box_body_entered"]
+[connection signal="body_exited" from="push_box" to="." method="_on_push_box_body_exited"]
